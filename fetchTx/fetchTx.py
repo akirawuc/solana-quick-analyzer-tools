@@ -7,7 +7,7 @@ args = parser.parse_args()
 
 
 def getTx(sig):
-    url = 'http://api.mainnet-beta.solana.com'
+    url = 'https://solana-api.projectserum.com'
     content = {
         "jsonrpc": "2.0",
         "id": 1,
