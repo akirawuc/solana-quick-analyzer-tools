@@ -2,8 +2,20 @@ import requests as r
 import json
 import argparse
 parser = argparse.ArgumentParser(description='help getting the tx')
-parser.add_argument('-s', '--sig', type=str, help='the signature of the tx')
+
+parser.add_argument('-t', '--type', type=str,
+                    help='identify which method to use')
+
+parser.add_argument('-s', '--sig', type=str,
+                    help='the signature of the tx')
+
 args = parser.parse_args()
+
+'''
+- modify the whole fetching code to factory pattern.
+    - getResp(reqType)
+    - reqType: different implementation of different rpc method
+'''
 
 
 def getTx(sig):

@@ -11,3 +11,4 @@ A tool for quickly fetching the content of a tx on Solana, and print the parsed 
 2. Run `docker run akichill/soltx -s replace_here_with_the_signature`, and replace the signature without quotation mark.
 
 
+
